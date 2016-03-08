@@ -246,13 +246,3 @@ replace "&#252;" "ü" -- $infile 2>&1 /dev/null
 replace "&#253;" "ý" -- $infile 2>&1 /dev/null
 replace "&#254;" "þ" -- $infile 2>&1 /dev/null
 replace "&#255;" "ÿ" -- $infile 2>&1 /dev/null
-####### Custom unwanted data remova #######
-replace "&nbsp;" " " -- $infile 2>&1 /dev/null
-replace "</div>" " " -- $infile 2>&1 /dev/null
-replace "h2" " " -- $infile -- $infile 2>&1 /dev/null
-replace "<" " " -- $infile -- $infile 2>&1 /dev/null
-replace ">" " " -- $infile -- $infile 2>&1 /dev/null
-replace "Andra sidor på webbplatsen " " " -- $infile 2>&1 /dev/null
-replace "    Organisation" "Organisation" -- $infile 2>&1 /dev/null
-replace "		 strong " "" -- $infile 2>&1 /dev/null
-replace "  br / " " " -- $infile 2>&1 /dev/null
